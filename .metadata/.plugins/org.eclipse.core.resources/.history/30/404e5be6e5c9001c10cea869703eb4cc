@@ -1,0 +1,49 @@
+class plane{
+	void takeoff() {
+		System.out.println("plane take-off");
+	}
+	void fly() {
+		System.out.println("plane flys");
+	}
+	void land() {
+		System.out.println("plane lands");
+	}
+}
+class cargoplane extends plane{
+	//@override
+	void fly() {
+		System.out.println("cargo plane flies at lower height");
+	}
+	//specialized method of cargoplane
+	void carrygoods() {
+		System.out.println("cargo plane carry goods");
+	}
+}
+class fighterplane extends plane{
+	//@override
+	void fly() {
+		System.out.println("fighterplane flies at greater height");
+	}
+	//specialized method of fighterplane
+	void carryweapons() {
+		System.out.println("fighterplane carry weapons");
+	}
+}
+class pasengerplane extends plane{
+	//@override
+	void fly() {
+		System.out.println("pasengerplane flies at medium height");
+	}
+	//specialized method of pasengerplane
+	void carrypassengers() {
+		System.out.println("pasengerplane carry passengers");
+	}
+}
+public class plane {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
